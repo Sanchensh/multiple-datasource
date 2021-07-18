@@ -1,0 +1,22 @@
+server:
+  port: 8081
+spring:
+  datasource:
+    dev:
+      jdbcUrl: jdbc:mysql://localhost:3306/test_dev
+      username: root
+      password: 123456
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      type: com.alibaba.druid.pool.DruidDataSource
+    fat:
+      jdbcUrl: jdbc:mysql://localhost:3306/test_fat
+      username: root
+      password: 123456
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      type: com.alibaba.druid.pool.DruidDataSource
+    pro:
+      jdbcUrl: jdbc:mysql://localhost:3306/test_pro
+      username: root
+      password: 123456
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      type: com.alibaba.druid.pool.DruidDataSource
